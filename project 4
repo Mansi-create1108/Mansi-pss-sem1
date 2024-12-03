@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+char key;
+printf("enter any key on keyboard");
+scanf("%c",&key);
+if((key>=a && key<=z)||(key>=A && key<=Z))
+{printf("The entered key is an alphabet");}
+else if (key>=0 && key<=9)
+{printf("The entered key is a number");}
+else 
+{printf("The entered key is an special character");}
+}
