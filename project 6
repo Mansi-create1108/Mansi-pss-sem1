@@ -1,13 +1,12 @@
 #include<stdio.h>
 void main()
-{
-int id,unit;
+{int id,unit;
 float charges;
 char name[25];
 printf("Enter your id\n");
 scanf("%d",&id);
 printf("Enter your name\n");
-scanf("%d",&name);
+scanf("%s",&name);
 printf("Enter your unit consumption\n");
 scanf("%d",&unit);
 
@@ -28,11 +27,12 @@ else
 else if(unit>=400 && unit < 600)
 {charges=unit*1.80;
 if(charges>400)
-{printf("your bill is %f",charges+(charges/15));}
+{printf("your bill is %f",charges+(charges/15));}}
 else if(unit>=600 )
 {charges=unit*2;
 if(charges>400)
-{printf("your bill is %f",charges+(charges/15));}
+{printf("your bill is %f",charges+(charges/15));}}
 else 
 {printf("wrong input");}
+    
 }
